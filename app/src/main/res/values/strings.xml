@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IBM_Coding_Challenge</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_location">Location</string>
+    <string name="title_search_queries">Search Queries</string>
+    <string name="temperature">%s\u2103</string>
+</resources>
