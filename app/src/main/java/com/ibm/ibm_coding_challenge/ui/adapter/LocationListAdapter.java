@@ -41,6 +41,7 @@ public class LocationListAdapter extends RecyclerView.Adapter<LocationListAdapte
         holder.type.setText(result.getLocation_type());
         holder.id.setText(result.getWoeid());
 
+        //can be done with itemtouchlistener also
         holder.card.setOnClickListener(view -> {
             context.startActivity(new Intent(context, WeatherDetailsActivity.class).putExtra(Constants.WOEID, result.getWoeid()));
         });
