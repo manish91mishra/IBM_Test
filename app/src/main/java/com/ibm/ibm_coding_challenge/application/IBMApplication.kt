@@ -5,6 +5,7 @@ import com.ibm.ibm_coding_challenge.model.db.LocRepository
 import com.ibm.ibm_coding_challenge.model.db.LocRoomDatabase
 
 class IBMApplication : Application(){
+    //initialize db and repo
     private val database by lazy { LocRoomDatabase.getDatabase(this@IBMApplication) }
     val repository by lazy { LocRepository(database.userDao(),this@IBMApplication) }
 }
